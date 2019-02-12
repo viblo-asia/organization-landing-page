@@ -4,9 +4,9 @@
       <div class="container">
         <SectionTitle title="Creating Organization" light/>
         <ul class="steps-bar">
-          <li class="is-active">Create via your profile page</li>
-          <li class="is-active">Wait for verification</li>
-          <li class="is-active">Ready to publish posts</li>
+          <li class="is-active"><span>Create via your profile page</span></li>
+          <li class="is-active"><span>Wait for verification</span></li>
+          <li class="is-active"><span>Ready to publish posts</span></li>
         </ul>
       </div>
     </section>
@@ -53,6 +53,9 @@
       display: flex;
       margin-top: 4rem;
       margin-bottom: 2rem;
+      @media screen and (max-width: 599px) {
+        flex-direction: column;
+      }
       li {
         display: flex;
         flex: 1;
@@ -62,9 +65,33 @@
         font-weight: 600;
         text-align: center;
         position: relative;
+        @media screen and (max-width: 599px) {
+          flex-direction: row;
+          align-items: center;
+          span {
+            margin-left: 1rem;
+            width: calc(100% - 120px);
+          }
+        }
         &:before {
           align-self: center;
+          background-position: center !important;
+          background-size: contain !important;
+          content: '';
+          display: inline-block;
           z-index: 20;
+          @media screen and (max-width: 599px) {
+            width: 120px;
+            height: 159px;
+          }
+          @media screen and (min-width: 600px) and (max-width: 899px) {
+            width: 150px;
+            height: 159px;
+          }
+          @media screen and (min-width: 900px) {
+            width: 231px;
+            height: 246px;
+          }
         }
         &:not(:last-child):after {
           content: '';
@@ -75,15 +102,27 @@
           top: 40%;
           left: 50%;
           z-index: 10;
+          @media screen and (max-width: 599px) {
+            height: 100%;
+            width: 15px;
+            left: 55px;
+            top: 50%;
+          }
+          @media screen and (min-width: 600px) and (max-width: 899px) {
+            top: 75px;
+          }
+          @media screen and (min-width: 900px) {
+            top: 116px;
+          }
         }
         &:first-child:before {
-          content: url(~assets/icons/step-01.png);
+          background: url(~assets/icons/step-01.png) no-repeat;
         }
         &:nth-child(2):before {
-          content: url(~assets/icons/step-02.png);
+          background: url(~assets/icons/step-02.png) no-repeat;
         }
         &:nth-child(3):before {
-          content: url(~assets/icons/step-03.png);
+          background: url(~assets/icons/step-03.png) no-repeat;
         }
       }
     }

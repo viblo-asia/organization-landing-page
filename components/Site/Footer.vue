@@ -10,7 +10,7 @@
         </div>
 
         <div class="column">
-          <div class="columns flex-end">
+          <div class="columns is-mobile flex-end">
             <div class="column menu">
               <p class="menu-label">Platform</p>
               <ul class="menu-list">
@@ -40,7 +40,7 @@
 <style lang="scss">
   .viblo-footer {
     background: #f9f9f9;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif !important;
     .justify-content-start {
       justify-content: flex-start;
     }
