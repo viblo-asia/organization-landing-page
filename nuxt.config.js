@@ -27,7 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/app.scss'
+    '~/assets/sass/app.scss',
+    '~/assets/sass/libs/animate.scss'
   ],
 
   /*
