@@ -1,0 +1,45 @@
+@import "~devices.css/src/variables";
+@import "~devices.css/src/reset";
+@import "~devices.css/src/macbook";
+
+.device-macbook {
+  width: 1024px;
+  height: 584px;
+  .device-frame {
+    width: 864px;
+    height: 570px;
+    box-shadow: none;
+    background: #ffffff;
+    padding: 20px;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  .device-content {
+    border: none;
+    width: 830px;
+    height: 520px;
+  }
+
+  .device-power {
+    -webkit-box-shadow: 0 30px 40px 9px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 30px 40px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 40px 9px rgba(0, 0, 0, 0.2);
+    &:before {
+      background: #f1f1f1;
+      box-shadow: inset 0 -2px 6px 0 #c6c6c6 !important;
+    }
+  }
+  .device-power,
+  .device-power:before {
+    width: 1024px;
+  }
+  .device-power:after {
+    width: 190px;
+    margin-left: -95px;
+  }
+}
