@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Hero id="home"/>
-    <Summary id="summary"/>
-    <KeyFeatures id="key-features"/>
-    <CreatingSection id="creating"/>
-    <PublishingSection id="managing"/>
+    <Hero id="home" class="scrollspy"/>
+    <Summary id="summary" class="scrollspy"/>
+    <KeyFeatures id="key-features" class="scrollspy"/>
+    <CreatingSection id="creating" class="scrollspy"/>
+    <PublishingSection id="managing" class="scrollspy"/>
   </div>
 </template>
 

@@ -73,7 +73,7 @@
       margin-top: 1rem;
     }
     .columns + .columns {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
 </style>

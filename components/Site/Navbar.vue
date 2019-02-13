@@ -23,10 +23,10 @@
       <div :class="{ 'is-active': showMenu }" class="navbar-menu" id="main-menu">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <a class="navbar-item" href="#home">Home</a>
-          <a class="navbar-item" href="#key-features">Key Features</a>
-          <a class="navbar-item" href="#creating">Creating Organization</a>
-          <a class="navbar-item" href="#managing">Managing Organization</a>
+          <a class="navbar-item" href="#home" data-scrollspy="#home">Home</a>
+          <a class="navbar-item" href="#key-features" data-scrollspy="#key-features">Key Features</a>
+          <a class="navbar-item" href="#creating" data-scrollspy="#creating">Creating Organization</a>
+          <a class="navbar-item" href="#managing" data-scrollspy="#managing">Managing Organization</a>
         </div>
       </div>
     </div>
@@ -34,6 +34,8 @@
 </template>
 
 <script>
+  import scrollSpy from 'simple-scrollspy'
+
   export default {
     data: () => ({
       showMenu: false,
@@ -58,6 +60,11 @@
 
     mounted() {
       window.addEventListener('scroll', () => this.stickNavbar())
+
+      scrollSpy('.viblo-navbar', {
+        menuActiveTarget: '.navbar-item',
+        offset: 150
+      })
     },
 
     beforeDestroy() {
@@ -69,6 +76,11 @@
 <style lang="scss">
   .viblo-navbar {
     min-height: 4rem;
+    .navbar-item {
+      border-radius: 4px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
     &:not(.is-sticky) {
       background: transparent;
       .logo-light {
@@ -76,6 +88,10 @@
       }
       .logo-dark {
         display: inline-block;
+      }
+      .navbar-item[data-active="true"], .navbar-item[data-active="true"]:hover {
+        background: #ffffff !important;
+        color: #333333 !important;
       }
     }
 
@@ -104,6 +120,10 @@
       .logo-light {
         display: inline-block;
         height: 28px;
+      }
+      .navbar-item[data-active="true"] {
+        background: #f4f4f4 !important;
+        color: #4771d9 !important;
       }
 
       + main {

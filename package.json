@@ -12,6 +12,7 @@
     "devices.css": "^0.1.15",
     "nuxt": "^2.4.0",
     "nuxt-buefy": "^0.3.2",
+    "simple-scrollspy": "^1.0.1",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {

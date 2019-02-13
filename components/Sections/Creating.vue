@@ -46,7 +46,7 @@
           background-size: contain !important;
           content: '';
           display: inline-block;
-          z-index: 999;
+          z-index: 20;
           @media screen and (max-width: 599px) {
             width: 120px;
             height: 159px;
