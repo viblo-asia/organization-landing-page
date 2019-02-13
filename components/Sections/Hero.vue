@@ -3,12 +3,12 @@
     <div class="hero-body">
       <div class="container">
         <div class="hero-content">
-          <h1 class="title">Promoting your Organization to</h1>
-          <h2 class="subtitle">Viblo's growing community.</h2>
+          <h1 class="title wow bounceInLeft">Promoting your Organization to</h1>
+          <h2 class="subtitle wow bounceInRight">Viblo's growing community.</h2>
         </div>
 
         <div class="hero-previewer">
-          <Device type="macbook">
+          <Device type="macbook wow fadeIn">
             <img class="device-content" src="/image-hero.jpg">
           </Device>
         </div>

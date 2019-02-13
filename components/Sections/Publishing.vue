@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="column-inner">
+          <div class="column-inner wow slideInRight fast">
             <img src="~/assets/images/preview-05.jpg">
           </div>
         </div>
@@ -27,7 +27,7 @@
 
       <div class="columns">
         <div class="column">
-          <div class="column-inner">
+          <div class="column-inner wow slideInLeft fast">
             <img src="~/assets/images/preview-02.png">
           </div>
         </div>
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="column-inner">
+          <div class="column-inner wow slideInRight fast">
             <img src="~/assets/images/preview-03.png">
           </div>
         </div>

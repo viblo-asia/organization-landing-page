@@ -1,8 +1,8 @@
 <template>
-  <div class="landing-page">
+  <div class="viblo">
     <Navbar/>
 
-    <main class="viblo-main-content main-content">
+    <main class="viblo-main">
       <nuxt/>
     </main>
 

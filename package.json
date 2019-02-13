@@ -11,7 +11,8 @@
     "cross-env": "^5.2.0",
     "devices.css": "^0.1.15",
     "nuxt": "^2.4.0",
-    "nuxt-buefy": "^0.3.2"
+    "nuxt-buefy": "^0.3.2",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "css-loader": "^2.1.0",
