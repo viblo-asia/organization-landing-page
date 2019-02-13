@@ -2,15 +2,75 @@
 @import "~devices.css/src/reset";
 @import "~devices.css/src/macbook";
 
+$device-sm-width: 400px;
+$device-sm-height: 200px;
+$frame-sm-width: 350px;
+$frame-sm-height: 200px;
+$frame-sm-size: 8px;
+
+$device-md-width: 700px;
+$device-md-height: 450px;
+$frame-md-width: 614px;
+$frame-md-height: 428px;
+$frame-md-size: 13px;
+
+$device-lg-width: 1024px;
+$device-lg-height: 584px;
+$frame-lg-width: 864px;
+$frame-lg-height: 570px;
+$frame-lg-size: 20px;
+
+@mixin macbook(
+  $device-width: $device-lg-width,
+  $device-height: $device-lg-height,
+  $frame-width: $frame-lg-width,
+  $frame-height: $frame-lg-height,
+  $frame-size: $frame-lg-size
+) {
+  .device-macbook {
+    width: $device-width;
+    height: $device-height;
+    .device-frame {
+      width: $frame-width;
+      height: $frame-height;
+      padding: $frame-size $frame-size $frame-size * 2;
+    }
+    .device-content {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+    .device-power {
+      &, &:before {
+        width: $device-width;
+      }
+      &:after {
+        width: 190px;
+        margin-left: -95px;
+      }
+    }
+  }
+}
+
+// The size is responsive
+@media screen and (max-width: 767px) {
+  @include macbook($device-sm-width, $device-sm-height, $frame-sm-width, $frame-sm-height, $frame-sm-size)
+}
+
+// The size is responsive
+@media screen and (min-width: 768px) and (max-width: 1087px) {
+  @include macbook($device-md-width, $device-md-height, $frame-md-width, $frame-md-height, $frame-md-size)
+}
+
+// The size is responsive
+@media screen and (min-width: 1088px) {
+  @include macbook;
+}
+
 .device-macbook {
-  width: 1024px;
-  height: 584px;
   .device-frame {
-    width: 864px;
-    height: 570px;
     box-shadow: none;
     background: #ffffff;
-    padding: 20px;
     &:before {
       display: none;
     }
@@ -18,13 +78,9 @@
       display: none;
     }
   }
-
   .device-content {
     border: none;
-    width: 830px;
-    height: 520px;
   }
-
   .device-power {
     -webkit-box-shadow: 0 30px 40px 9px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 30px 40px 9px rgba(0, 0, 0, 0.2);
@@ -33,13 +89,5 @@
       background: #f1f1f1;
       box-shadow: inset 0 -2px 6px 0 #c6c6c6 !important;
     }
-  }
-  .device-power,
-  .device-power:before {
-    width: 1024px;
-  }
-  .device-power:after {
-    width: 190px;
-    margin-left: -95px;
   }
 }

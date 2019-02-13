@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="{
-      'viblo-navbar navbar header': true,
+      'viblo-navbar navbar header flex-center': true,
       'is-sticky slideInDown animated faster': isSticky,
       'is-primary fadeInDown animated faster': !isSticky
     }"

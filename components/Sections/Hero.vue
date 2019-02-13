@@ -33,6 +33,9 @@
     padding-top: 4rem;
     background: linear-gradient(180deg, #4771d9 0%, #5bdfdf 100%) no-repeat;
     background-size: 100% calc(100% - 180px);
+    @media screen and (max-width: 400px) {
+      background-size: 100%;
+    }
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -42,9 +45,15 @@
 
       .title, .subtitle {
         font-family: Poppins, sans-serif;
-        font-size: 3.5rem;
+        font-size: 2rem;
         color: #ffffff;
         text-align: center;
+        @media screen and (min-width: 768px) and (max-width: 1087px) {
+          font-size: 2.8rem;
+        }
+        @media screen and (min-width: 1088px) {
+          font-size: 3.5rem;
+        }
       }
       .title {
         font-weight: 600;
@@ -56,13 +65,16 @@
     }
 
     &-previewer {
-      display: flex;
+      display: none;
       justify-content: center;
       position: relative;
-      .device-frame {
-        -webkit-box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
-        box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
+      @media screen and (min-width: 400px) {
+        display: flex;
+      }
+      @media screen and (max-width: 500px) {
+        &:before, &:after {
+          display: none;
+        }
       }
       &:before {
         content: url(~assets/images/bg-device-left.png);
@@ -75,6 +87,11 @@
         position: absolute;
         top: -50px;
         right: -200px;
+      }
+      .device-frame {
+        -webkit-box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 12px 22px 8px rgba(0,0,0,0.1);
       }
     }
   }
