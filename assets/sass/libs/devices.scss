@@ -15,17 +15,23 @@ $frame-md-height: 428px;
 $frame-md-size: 13px;
 
 $device-lg-width: 1024px;
-$device-lg-height: 584px;
+$device-lg-height: 514px;
 $frame-lg-width: 864px;
-$frame-lg-height: 570px;
+$frame-lg-height: 500px;
 $frame-lg-size: 20px;
 
+$device-xl-width: 1024px;
+$device-xl-height: 584px;
+$frame-xl-width: 864px;
+$frame-xl-height: 570px;
+$frame-xl-size: 20px;
+
 @mixin macbook(
-  $device-width: $device-lg-width,
-  $device-height: $device-lg-height,
-  $frame-width: $frame-lg-width,
-  $frame-height: $frame-lg-height,
-  $frame-size: $frame-lg-size
+  $device-width: $device-xl-width,
+  $device-height: $device-xl-height,
+  $frame-width: $frame-xl-width,
+  $frame-height: $frame-xl-height,
+  $frame-size: $frame-xl-size
 ) {
   .device-macbook {
     width: $device-width;
@@ -63,7 +69,11 @@ $frame-lg-size: 20px;
 }
 
 // The size is responsive
-@media screen and (min-width: 1088px) {
+@media screen and (min-width: 1088px) and (max-width: 1399px) {
+  @include macbook($device-lg-width, $device-lg-height, $frame-lg-width, $frame-lg-height, $frame-lg-size);
+}
+
+@media screen and (min-width: 1400px) {
   @include macbook;
 }
 

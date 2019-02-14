@@ -15,7 +15,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Free service for technical knowledge sharing' }
+      { hid: 'description', name: 'description', content: 'Promoting your Organization to Viblo\'s growing community' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://viblo.asia/favicon.ico' },

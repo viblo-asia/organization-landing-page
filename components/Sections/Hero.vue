@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="hero-body">
+    <div class="hero-body flex-center">
       <div class="container">
         <div class="hero-content">
           <h1 class="title wow bounceInLeft">Promoting your Organization to</h1>
@@ -29,8 +29,6 @@
 
 <style lang="scss">
   .hero {
-    margin-top: -4rem;
-    padding-top: 4rem;
     background: linear-gradient(180deg, #4771d9 0%, #5bdfdf 100%) no-repeat;
     background-size: 100% calc(100% - 180px);
     @media screen and (max-width: 400px) {
@@ -71,7 +69,7 @@
       @media screen and (min-width: 400px) {
         display: flex;
       }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 1200px) {
         &:before, &:after {
           display: none;
         }
