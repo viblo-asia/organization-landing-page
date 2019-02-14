@@ -66,35 +66,3 @@
     </div>
   </section>
 </template>
-
-<style lang="scss">
-  .section-features {
-    .section-title {
-      margin-bottom: 3rem;
-    }
-    .key-features {
-      flex-direction: column;
-    }
-    .key-features,
-    .feature .media-content,
-    .feature .media-left {
-      display: flex;
-      align-self: center;
-    }
-    .feature + .feature {
-      border-top: none;
-    }
-    .feature {
-      .subtitle {
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      p + p {
-        margin-top: 1rem;
-      }
-    }
-    .features + .features {
-      margin-top: 2rem;
-    }
-  }
-</style>

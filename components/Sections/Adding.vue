@@ -28,35 +28,3 @@
     </div>
   </section>
 </template>
-
-<style lang="scss">
-  .section-adding {
-    .todo-list {
-      li {
-        + li {
-          margin-top: 1.25rem;
-        }
-        p {
-          line-height: 2;
-          margin-left: 1rem;
-        }
-      }
-      li:before {
-        display: inline-block;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        content: '';
-        width: 1rem;
-        height: 1rem;
-        background: #5be0e0;
-        position: relative;
-        top: 2px;
-        margin-right: 0.3rem;
-      }
-    }
-  }
-  .border-bottom {
-    border-bottom: solid 1px #ebebeb;
-  }
-</style>

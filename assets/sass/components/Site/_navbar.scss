@@ -1,0 +1,73 @@
+$navbar-height: 3.75rem;
+
+.viblo-navbar {
+  min-height: $navbar-height;
+
+  & + main .hero {
+    margin-top: -$navbar-height;
+    padding-top: $navbar-height;
+  }
+
+  .navbar-item {
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  &:not(.is-sticky) {
+    background: transparent;
+    .logo-light {
+      display: none;
+    }
+    .logo-dark {
+      display: inline-block;
+    }
+    .navbar-item[data-active="true"], .navbar-item[data-active="true"]:hover {
+      background: #ffffff !important;
+      color: #333333 !important;
+    }
+  }
+
+  @media screen and (min-width: 1700px) {
+    .container-fluid {
+      max-width: 1680px;
+    }
+    .navbar-item {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+    .navbar-item[data-active="true"] {
+      background: #f4f4f4 !important;
+      color: #4771d9 !important;
+    }
+
+    + main {
+      padding-top: $navbar-height;
+    }
+  }
+
+
+  &.is-open-mobile-menu,
+  &.is-sticky {
+    .navbar-burger {
+      color: #4a4a4a !important;
+    }
+    .logo-dark {
+      display: none;
+    }
+    .logo-light {
+      display: inline-block;
+      height: 28px;
+    }
+  }
+}

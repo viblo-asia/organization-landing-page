@@ -63,17 +63,3 @@
     </div>
   </section>
 </template>
-
-<style lang="scss">
-  .section-publishing {
-    .pt-0 {
-      padding-top: 0;
-    }
-    .mt-1 {
-      margin-top: 1rem;
-    }
-    .columns + .columns {
-      margin-top: 3rem;
-    }
-  }
-</style>

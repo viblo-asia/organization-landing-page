@@ -1,22 +1,15 @@
 @import "libs/buefy";
 @import "libs/devices";
 
-html, body, p {
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-  font-size: 100%;
-  line-height: 2.2;
-}
+@import "reset";
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "components/Site/navbar";
+@import "components/Site/footer";
+@import "components/Site/section-title";
 
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1172px;
-    width: 1172px;
-  }
-}
+@import "components/Sections/hero";
+@import "components/Sections/summary";
+@import "components/Sections/key-features";
+@import "components/Sections/creating";
+@import "components/Sections/adding";
+@import "components/Sections/publishing";

@@ -1,0 +1,35 @@
+.viblo-footer {
+  background: #f9f9f9;
+  font-family: Roboto, sans-serif !important;
+  .justify-content-start {
+    justify-content: flex-start;
+  }
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .menu {
+    max-width: 13rem;
+    .menu-label {
+      font-size: 1.125rem;
+      text-transform: none;
+      font-family: inherit;
+      font-weight: 600;
+      color: rgba(41, 43, 44, 255);
+      padding-left: 12px;
+      padding-right: 12px;
+      letter-spacing: unset;
+    }
+    .menu-list li a {
+      font-size: 1rem;
+      color: rgba(41, 43, 44, 255);
+    }
+  }
+  .logo {
+    height: 39px;
+    width: auto;
+    + p {
+      font-family: inherit;
+    }
+  }
+}
