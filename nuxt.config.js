@@ -1,5 +1,11 @@
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
   mode: 'spa',
+
+  router: {
+    base: isProduction ? '/organization-feature' : undefined
+  },
 
   /*
   ** Headers of the page
