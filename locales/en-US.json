@@ -1,0 +1,69 @@
+{
+  "site": {
+    "name": "Viblo Organization",
+    "slogan": "Free service for technical knowledge sharing"
+  },
+  "main_menu": {
+    "home": "Home",
+    "key_features": "Key Features",
+    "creating": "Creating Organization",
+    "managing": "Managing Organization",
+    "publishing": "Publishing organization"
+  },
+  "footer": {
+    "platform": "Platform",
+    "resources": "Resources",
+    "links": {
+      "mobile_app": "Mobile App",
+      "atom_plugin": "Atom Plugin",
+      "browser_extension": "Browser Extension",
+      "sdk": "Javascript SDK",
+      "facebook": "Facebook",
+      "github": "Github",
+      "signup": "Signup",
+      "terms": "Terms"
+    }
+  },
+  "hero": {
+    "title": "Promoting your Organization to",
+    "subtitle": "Viblo's growing community."
+  },
+  "summary": {
+    "description": "Viblo organization is a place where companies, teams and groups can share their perspectives, visions and development stories."
+  },
+  "key_features": {
+    "reach_wider_audience": "Reach a wider audience with Viblo's growing community.",
+    "multiple_collaborators": "Multiple collaborators with editors and writer roles.",
+    "ga_available": "Statistics available via Google Analytics tracking.",
+    "promoting": "Promoting organization",
+    "place_on_homepage": "Get a place on the home page as a featured top active organization.",
+    "get_credit": "Get credit for posts made by your authors.."
+  },
+  "creating": {
+    "steps": {
+      "1": "1. Create via your profile page",
+      "2": "2. Wait for verification",
+      "3": "3. Ready to publish posts"
+    }
+  },
+  "managing": {
+    "titles": {
+      "adding_collaborators": "Adding collaborators",
+      "submit_by_writers": "Posts are submitted as draft by writers",
+      "publishing_posts": "Publishing posts"
+    },
+    "contents": {
+      "two_roles": "Organization members are categorized into two roles:",
+      "writer": "Writer",
+      "writer_explain": "Regular contributors who can submit posts to the organization",
+      "editor": "Editor",
+      "editor_explain": "People who are in charge of reviewing posts submitted by writers",
+      "will_be_reviewed": "They will be reviewed, edited and get approved by editors before publishing.",
+      "published_in_organization": "Posts published in an organization:",
+      "shown_in_both": "Will be shown in both the author and the organization's news feed.",
+      "credited_as_post_appears": "Besides being credited to the author, the associating organization is also credited as the post appears in any feed and in the post view.",
+      "ga_tracking": "Users' activities on posts (interactions, views, etc) are tracked with customizable Google Analytics tracking.",
+      "edit_post": "Besides authors, editors and the owner of the organization can also edit the post."
+    }
+  }
+}

@@ -7,29 +7,29 @@
             <a href="/">
               <img class="logo" src="https://viblo.asia/logo_full.svg" alt="Viblo">
             </a>
-            <p>Free service for technical knowledge sharing</p>
+            <p>{{ $t('site.slogan') }}</p>
           </div>
         </div>
 
         <div class="column">
           <div class="columns is-mobile flex-end">
             <div class="column menu">
-              <p class="menu-label">Platform</p>
+              <p class="menu-label">{{ $t('footer.platform') }}</p>
               <ul class="menu-list">
-                <li><a href="https://viblo.asia/app" target="_blank">Mobile App</a></li>
-                <li><a href="https://atom.io/packages/viblo" target="_blank">Atom Plugin</a></li>
-                <li><a href="https://chrome.google.com/webstore/detail/viblos-news-feed/mliahmjgdpkkicelofhbhgiidgljijmj" target="_blank">Browser Extension</a></li>
-                <li><a href="https://github.com/viblo-asia/sdk-js" target="_blank">Javascript SDK</a></li>
+                <li><a href="https://viblo.asia/app" target="_blank">{{ $t('footer.links.mobile_app') }}</a></li>
+                <li><a href="https://atom.io/packages/viblo" target="_blank">{{ $t('footer.links.atom_plugin') }}</a></li>
+                <li><a href="https://chrome.google.com/webstore/detail/viblos-news-feed/mliahmjgdpkkicelofhbhgiidgljijmj" target="_blank">{{ $t('footer.links.browser_extension') }}</a></li>
+                <li><a href="https://github.com/viblo-asia/sdk-js" target="_blank">{{ $t('footer.links.sdk') }}</a></li>
               </ul>
             </div>
 
             <div class="column menu">
-              <p class="menu-label">Resources</p>
+              <p class="menu-label">{{ $t('footer.resources') }}</p>
               <ul class="menu-list">
-                <li><a href="https://www.facebook.com/viblo.asia" target="_blank">Facebook</a></li>
-                <li><a href="https://github.com/viblo-asia" target="_blank">Github</a></li>
-                <li><a href="https://viblo.asia/regsiter">Signup</a></li>
-                <li><a href="https://viblo.asia/terms">Terms</a></li>
+                <li><a href="https://www.facebook.com/viblo.asia" target="_blank">{{ $t('footer.links.facebook') }}</a></li>
+                <li><a href="https://github.com/viblo-asia" target="_blank">{{ $t('footer.links.github') }}</a></li>
+                <li><a href="https://viblo.asia/regsiter">{{ $t('footer.links.signup') }}</a></li>
+                <li><a href="https://viblo.asia/terms">{{ $t('footer.links.terms') }}</a></li>
               </ul>
             </div>
           </div>

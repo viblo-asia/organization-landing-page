@@ -1,0 +1,68 @@
+{
+  "site": {
+    "name": "Viblo Organization",
+    "slogan": "Dịch vụ chia sẻ kiến thức công nghệ miễn phí"
+  },
+  "main_menu": {
+    "home": "Trang chủ",
+    "key_features": "Các tính năng chính",
+    "creating": "Tạo tổ chức",
+    "managing": "Quản lý tổ chức"
+  },
+  "footer": {
+    "platform": "Platform",
+    "resources": "Resources",
+    "links": {
+      "mobile_app": "Mobile App",
+      "atom_plugin": "Atom Plugin",
+      "browser_extension": "Browser Extension",
+      "sdk": "Javascript SDK",
+      "facebook": "Facebook",
+      "github": "Github",
+      "signup": "Đăng ký",
+      "terms": "Điều khoản sử dụng"
+    }
+  },
+  "hero": {
+    "title": "Quảng bá tổ chức của bạn",
+    "subtitle": "đến cộng đồng không ngừng phát triển của Viblo."
+  },
+  "summary": {
+    "description": "Viblo organization (tổ chức) là nơi các công ty, tổ chức các nhóm phát triển chia sẻ về những sứ mệnh, tầm nhìn và những kinh nghiệm làm việc của mình trong ngành IT."
+  },
+  "key_features": {
+    "reach_wider_audience": "Tiếp cận cộng đồng đang không ngừng phát triển của Viblo.",
+    "multiple_collaborators": "Hệ thống phân quyền người dùng linh hoạt với 2 vai trò chính là tác giả và biên tập viên.",
+    "ga_available": "Thống kê chính xác với Google Analytics",
+    "promoting": "Quảng bá tổ chức của bạn",
+    "place_on_homepage": "Hiển thị trên trang chủ với tính năng xếp hạng top đầu các tổ chức hoạt động nổi bật.",
+    "get_credit": "Nhận tiền từ các bài viết được viết bởi các tác giả trong tổ chức của bạn.."
+  },
+  "creating": {
+    "steps": {
+      "1": "1. Tạo trên trang cá nhân",
+      "2": "2. Chờ xác minh",
+      "3": "3. Sẵn sàng đăng bài"
+    }
+  },
+  "managing": {
+    "titles": {
+      "adding_collaborators": "Thêm thành viên",
+      "submit_by_writers": "Bản thảo được gửi lên bởi các thành viên",
+      "publishing_posts": "Công khai bài viết"
+    },
+    "contents": {
+      "two_roles": "Thành viên trong tổ chức được chia làm 2 nhóm chính:",
+      "writer": "Nhóm tác giả",
+      "writer_explain": "Là nhóm trực tiếp viết bài cho tổ chức.",
+      "editor": "Nhóm biên tập viên",
+      "editor_explain": "Là nhóm chịu trách nhiệm duyệt các bài đăng gửi lên từ các tác giả.",
+      "will_be_reviewed": "Chúng sẽ được duyệt, chỉnh sửa bởi nhóm biên tập viên trước khi chúng được công khai.",
+      "published_in_organization": "Bài viết đã công khai trong một tổ chức:",
+      "shown_in_both": "Sẽ được xuất hiện ở cả trang của tác giả và trang tổ chức.",
+      "credited_as_post_appears": "Ngoài việc hiển thị tên tác giả, bài đăng ở xuất hiện ở các trang sẽ còn chỉ định tên của tổ chức của tác giả theo đó.",
+      "ga_tracking": "Mọi hoạt động từ khán giả đến bài viết( tương tác, lượt xem,….) sẽ được thống kê một cách linh hoạt thông qua Google Analytics.",
+      "edit_post": "Ngoài tác giả hay các biên tập viên thì người chủ của tổ chức cũng có thể chỉnh sửa bài viết."
+    }
+  }
+}

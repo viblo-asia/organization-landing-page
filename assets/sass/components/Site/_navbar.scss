@@ -12,6 +12,7 @@ $navbar-height: 3.75rem;
     border-radius: 4px;
     margin-left: 2px;
     margin-right: 2px;
+    text-transform: capitalize;
   }
 
   &:not(.is-sticky) {

@@ -20,7 +20,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://viblo.asia/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=vietnamese' }
     ]
   },
 
@@ -41,7 +41,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/components.js'
+    '~/plugins/components.js',
+    '~/plugins/i18n.js'
   ],
 
   /*
@@ -51,6 +52,10 @@ module.exports = {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy'
   ],
+
+  router: {
+    middleware: 'i18n'
+  },
 
   /*
   ** Build configuration

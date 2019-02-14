@@ -1,12 +1,11 @@
 <template>
   <section class="section section-summary">
     <div class="container">
-      <SectionTitle title="Viblo Organization" class="wow fadeIn"/>
+      <SectionTitle :title="$t('site.name')" class="wow fadeIn"/>
 
       <div class="flex-center">
         <p class="subtitle wow slideInLeft fast">
-          Viblo organization is a place where companies, teams and groups can share their perspectives,
-          visions and development stories.
+          {{ $t('summary.description') }}
         </p>
       </div>
 

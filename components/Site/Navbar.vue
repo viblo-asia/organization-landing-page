@@ -24,10 +24,10 @@
       <div :class="{ 'is-active': showMenu }" class="navbar-menu" id="main-menu">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <a class="navbar-item" href="#home" data-scrollspy="#home">Home</a>
-          <a class="navbar-item" href="#key-features" data-scrollspy="#key-features">Key Features</a>
-          <a class="navbar-item" href="#creating" data-scrollspy="#creating">Creating Organization</a>
-          <a class="navbar-item" href="#managing" data-scrollspy="#managing">Managing Organization</a>
+          <a class="navbar-item" href="#home" data-scrollspy="#home">{{ $t('main_menu.home') }}</a>
+          <a class="navbar-item" href="#key-features" data-scrollspy="#key-features">{{ $t('main_menu.key_features') }}</a>
+          <a class="navbar-item" href="#creating" data-scrollspy="#creating">{{ $t('main_menu.creating') }}</a>
+          <a class="navbar-item" href="#managing" data-scrollspy="#managing">{{ $t('main_menu.managing') }}</a>
         </div>
       </div>
     </div>
