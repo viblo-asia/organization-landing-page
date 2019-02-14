@@ -1,6 +1,7 @@
-# olp
+# Organization Landing Page
 
-> My super-excellent Nuxt.js project
+> The landing page for Viblo's Organization feature base on Nuxt.js.
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
 ## Build Setup
 
@@ -9,14 +10,21 @@
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ yarn dev
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
+# generate static project for production
+$ yarn generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Release
+
+1. Generate and Zip static project
+
+```bash
+# generate static project for production and create ./dist/dist.zip file
+$ yarn release 
+```
+
+2. Release
+
+Make a release on [repositoy](https://github.com/viblo-asia/organization-landing-page) and attach `dist.zip` file.
