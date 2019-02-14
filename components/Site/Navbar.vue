@@ -9,7 +9,7 @@
     <div class="container-fluid container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
-          <img class="logo-dark" src="/logo-white.png" alt="Viblo" height="28">
+          <img class="logo-dark" src="~/assets/images/logo-white.png" alt="Viblo" height="28">
           <img class="logo-light" src="https://viblo.asia/logo_full.svg" alt="Viblo" height="28">
         </nuxt-link>
 
