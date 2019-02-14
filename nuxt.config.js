@@ -1,3 +1,5 @@
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
   mode: 'spa',
 
@@ -50,6 +52,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: isProduction ? '/organization-feature' : '',
+
     /*
     ** You can extend webpack config here
     */
