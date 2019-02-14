@@ -5,9 +5,11 @@
     display: flex;
     margin-top: 4rem;
     margin-bottom: 2rem;
+
     @media screen and (max-width: 599px) {
       flex-direction: column;
     }
+
     li {
       display: flex;
       flex: 1;
@@ -17,6 +19,8 @@
       font-weight: 600;
       text-align: center;
       position: relative;
+      z-index: 100;
+
       @media screen and (max-width: 599px) {
         flex-direction: row;
         align-items: center;
@@ -25,6 +29,7 @@
           width: calc(100% - 120px);
         }
       }
+
       &:before {
         align-self: center;
         background-position: center !important;
@@ -45,6 +50,7 @@
           height: 246px;
         }
       }
+
       &:not(:last-child):after {
         content: '';
         height: 15px;
@@ -54,19 +60,24 @@
         top: 40%;
         left: 50%;
         z-index: 1;
+        animation-name: slideInLeft;
+
         @media screen and (max-width: 599px) {
           height: 100%;
           width: 15px;
           left: 55px;
           top: 50%;
         }
+
         @media screen and (min-width: 600px) and (max-width: 899px) {
           top: 75px;
         }
+
         @media screen and (min-width: 900px) {
           top: 116px;
         }
       }
+
       &:first-child:before {
         background: url(~assets/icons/step-01.png) no-repeat;
       }
