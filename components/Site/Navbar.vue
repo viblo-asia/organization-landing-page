@@ -28,6 +28,36 @@
           <a class="navbar-item" href="#key-features" data-scrollspy="#key-features">{{ $t('main_menu.key_features') }}</a>
           <a class="navbar-item" href="#creating" data-scrollspy="#creating">{{ $t('main_menu.creating') }}</a>
           <a class="navbar-item" href="#managing" data-scrollspy="#managing">{{ $t('main_menu.managing') }}</a>
+
+          <div class="languages-menu dropdown" :class="{ 'is-active': showLanguagesList }">
+            <div class="dropdown-trigger flex-center">
+              <button
+                class="button is-text"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+                @click.stop="toggleLanguageMenu"
+              >
+                <span>{{ $store.getters.currentLocale.name }}</span>
+                <span>
+                  <FaIcon v-if="!showLanguagesList" icon="angle-down"/>
+                  <FaIcon v-else icon="angle-up"/>
+                </span>
+              </button>
+            </div>
+
+            <div v-click-outside="vcoConfig" class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <nuxt-link
+                  v-for="(locale, index) in $store.getters.localeList"
+                  :key="index"
+                  :to="`/${locale.code}`"
+                  class="dropdown-item"
+                >
+                  {{ locale.name }}
+                </nuxt-link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,14 +68,28 @@
   import scrollSpy from 'simple-scrollspy'
 
   export default {
-    data: () => ({
-      showMenu: false,
-      isSticky: false
-    }),
+    data() {
+      return {
+        showMenu: false,
+        isSticky: false,
+        showLanguagesList: false,
+        vcoConfig: {
+          handler: this.toggleLanguageMenu,
+          middleware: (e, el) => {
+            return this.showLanguagesList
+              && e.target.getAttribute('aria-controls') !== 'dropdown-menu'
+          }
+        }
+      }
+    },
 
     methods: {
       toggleMenu() {
         this.showMenu = !this.showMenu
+      },
+
+      toggleLanguageMenu() {
+        this.showLanguagesList = !this.showLanguagesList
       },
 
       stickNavbar() {

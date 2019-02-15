@@ -26,6 +26,19 @@ $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
+$navbar-height: 3.75rem;
+
 // Import Bulma and Buefy styles
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+@import "~bulma/sass/base/_all";
+
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/title";
+
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/components/menu";
+@import "~bulma/sass/components/dropdown";
+
+@import "~bulma/sass/layout/_all";
+@import "~bulma/sass/grid/_all";

@@ -1,7 +1,6 @@
-$navbar-height: 3.75rem;
-
 .viblo-navbar {
   min-height: $navbar-height;
+  z-index: 1000;
 
   & + main .hero {
     margin-top: -$navbar-height;
@@ -10,8 +9,7 @@ $navbar-height: 3.75rem;
 
   .navbar-item {
     border-radius: 4px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     text-transform: capitalize;
   }
 
@@ -23,9 +21,14 @@ $navbar-height: 3.75rem;
     .logo-dark {
       display: inline-block;
     }
+    .languages-menu .button:hover,
+    .languages-menu .button:active,
     .navbar-item[data-active="true"], .navbar-item[data-active="true"]:hover {
       background: #ffffff !important;
       color: #333333 !important;
+    }
+    .languages-menu.is-active button {
+      background: inherit;
     }
   }
 
@@ -69,6 +72,25 @@ $navbar-height: 3.75rem;
     .logo-light {
       display: inline-block;
       height: 28px;
+    }
+    .languages-menu .button {
+      color: #333333 !important;
+    }
+  }
+
+  .languages-menu {
+    .dropdown-trigger .button {
+      border: none;
+      outline: none !important;
+      height: $navbar-height - 0.25rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      span + span {
+        margin-left: 0.3rem;
+      }
     }
   }
 }

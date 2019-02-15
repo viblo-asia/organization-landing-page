@@ -1,11 +1,9 @@
 const isProduction = process.env.NODE_ENV === 'production'
+const routerBase = isProduction ? '/organization-feature' : '/'
+const publicPath = isProduction ? '/organization-feature' : undefined
 
 module.exports = {
   mode: 'spa',
-
-  router: {
-    base: isProduction ? '/organization-feature' : undefined
-  },
 
   /*
   ** Headers of the page
@@ -42,32 +40,27 @@ module.exports = {
   */
   plugins: [
     '~/plugins/components.js',
+    '~/plugins/font-awesome.js',
     '~/plugins/i18n.js'
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [,
-    // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
-  ],
-
   router: {
+    base: routerBase,
     middleware: 'i18n'
+  },
+
+  generate: {
+   routes: [
+     `${routerBase}`,
+     `${routerBase}/en-US`,
+     `${routerBase}/vi-VN`
+   ]
   },
 
   /*
   ** Build configuration
   */
   build: {
-    publicPath: '/organization-feature',
-
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-      //
-    }
+    publicPath
   }
 }
