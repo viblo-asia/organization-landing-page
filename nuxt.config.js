@@ -1,8 +1,10 @@
+import { pageSEO, defaultSEOData } from './utils/seo'
+
 const isProduction = process.env.NODE_ENV === 'production'
 const routerBase = isProduction ? '/organization-feature' : '/'
 const publicPath = isProduction ? '/organization-feature' : undefined
 
-module.exports = {
+export default {
   mode: 'spa',
 
   /*
@@ -13,7 +15,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Promoting your Organization to Viblo\'s growing community' }
+      ...pageSEO(defaultSEOData)
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://viblo.asia/favicon.ico' },

@@ -9,7 +9,7 @@
 
         <div class="hero-previewer">
           <Device type="macbook wow fadeIn">
-            <img class="device-content" src="~/assets/images/image-hero.jpg">
+            <img class="device-content" src="~/assets/images/viblo.asia_newest.png">
           </Device>
         </div>
       </div>
