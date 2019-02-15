@@ -76,10 +76,17 @@
         vcoConfig: {
           handler: this.toggleLanguageMenu,
           middleware: (e, el) => {
-            return this.showLanguagesList
-              && e.target.getAttribute('aria-controls') !== 'dropdown-menu'
+            const validElement = e.target.getAttribute('aria-controls') !== 'dropdown-menu'
+
+            return this.showLanguagesList && validElement
           }
         }
+      }
+    },
+
+    watch: {
+      '$route'() {
+        this.showLanguagesList = false
       }
     },
 
