@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Hero id="home" class="scrollspy"/>
-    <Summary id="summary" class="scrollspy"/>
+    <div id="overview"  class="scrollspy">
+      <Hero class="scrollspy"/>
+      <Summary/>
+    </div>
     <KeyFeatures id="key-features" class="scrollspy"/>
     <CreatingSection id="creating" class="scrollspy"/>
     <PublishingSection id="managing" class="scrollspy"/>
