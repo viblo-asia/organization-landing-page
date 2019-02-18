@@ -60,6 +60,8 @@
           </div>
         </div>
       </div>
+
+      <CreateNowButton class="mt-4 mb-4"/>
     </div>
   </section>
 </template>

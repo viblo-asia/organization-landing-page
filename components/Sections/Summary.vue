@@ -17,6 +17,8 @@
           <img src="~/assets/images/preview-02.jpg">
         </div>
       </div>
+
+      <CreateNowButton text="Promote your organization fore FREE!" class="mt-4"/>
     </div>
   </section>
 </template>
