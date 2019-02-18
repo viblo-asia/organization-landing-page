@@ -1,14 +1,12 @@
 import { pageSEO, defaultSEOData } from './utils/seo'
-
-const isProduction = process.env.NODE_ENV === 'production'
-const routerBase = isProduction ? '/organization-feature' : '/'
-const publicPath = isProduction ? '/organization-feature' : undefined
+import { ROUTER_BASE, PUBLIC_PATH, GOOGLE_ANALYTICS_TRACK_ID } from './env/nuxt'
 
 export default {
   mode: 'spa',
 
   env: {
-    routerBase
+    ROUTER_BASE,
+    GOOGLE_ANALYTICS_TRACK_ID
   },
 
   /*
@@ -50,16 +48,26 @@ export default {
     '~/plugins/i18n.js'
   ],
 
+  modules: [
+    // Google analytics:
+    ['@nuxtjs/google-analytics'],
+  ],
+
+  googleAnalytics:
+  {
+    id: GOOGLE_ANALYTICS_TRACK_ID
+  },
+
   router: {
-    base: routerBase,
+    base: ROUTER_BASE,
     middleware: 'i18n'
   },
 
   generate: {
    routes: [
-     `${routerBase}`,
-     `${routerBase}/en-US`,
-     `${routerBase}/vi-VN`
+     `${ROUTER_BASE}`,
+     `${ROUTER_BASE}/en-US`,
+     `${ROUTER_BASE}/vi-VN`
    ]
   },
 
@@ -67,6 +75,6 @@ export default {
   ** Build configuration
   */
   build: {
-    publicPath
+    publicPath: PUBLIC_PATH
   }
 }
