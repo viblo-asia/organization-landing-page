@@ -22,8 +22,7 @@
       display: inline-block;
     }
     .languages-menu .button:hover,
-    .languages-menu .button:active,
-    .navbar-item[data-active="true"], .navbar-item[data-active="true"]:hover {
+    .languages-menu .button:active {
       background: #ffffff !important;
       color: #333333 !important;
     }
@@ -50,7 +49,7 @@
     -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
     -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
-    .navbar-item[data-active="true"] {
+    .navbar-item.active {
       background: #f4f4f4 !important;
       color: #4771d9 !important;
     }

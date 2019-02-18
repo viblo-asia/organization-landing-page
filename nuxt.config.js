@@ -7,6 +7,10 @@ const publicPath = isProduction ? '/organization-feature' : undefined
 export default {
   mode: 'spa',
 
+  env: {
+    routerBase
+  },
+
   /*
   ** Headers of the page
   */
