@@ -64,5 +64,9 @@
       "ga_tracking": "Mọi hoạt động từ khán giả đến bài viết( tương tác, lượt xem,….) sẽ được thống kê một cách linh hoạt thông qua Google Analytics.",
       "edit_post": "Ngoài tác giả hay các biên tập viên thì người chủ của tổ chức cũng có thể chỉnh sửa bài viết."
     }
+  },
+  "button": {
+    "promote_organization": "Quảng bá tổ chức miễn phí!",
+    "create_now": "Tạo tổ chức ngay bây giờ!"
   }
 }

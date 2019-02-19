@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <CreateNowButton class="mt-4 mb-4"/>
+      <CreateNowButton :text="$t('button.create_now')" class="mt-4 mb-4"/>
     </div>
   </section>
 </template>

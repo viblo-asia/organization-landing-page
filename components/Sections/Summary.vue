@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <CreateNowButton text="Promote your organization fore FREE!" class="mt-4"/>
+      <CreateNowButton :text="$t('button.promote_organization')" class="mt-4"/>
     </div>
   </section>
 </template>

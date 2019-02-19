@@ -65,5 +65,9 @@
       "ga_tracking": "Users' activities on posts (interactions, views, etc) are tracked with customizable Google Analytics tracking.",
       "edit_post": "Besides authors, editors and the owner of the organization can also edit the post."
     }
+  },
+  "button": {
+    "promote_organization": "Promote Organization for Free!",
+    "create_now": "Create Organization now!"
   }
 }

@@ -34,10 +34,22 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .btn-create-now {
     text-transform: capitalize;
     padding: 1.6rem 1rem;
+    cursor: pointer;
+    border: solid 2px #4771d9 !important;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      background: #ffffff !important;
+      color: #4771d9 !important;
+      border: solid 2px #4771d9 !important;
+    }
   }
 </style>
 
