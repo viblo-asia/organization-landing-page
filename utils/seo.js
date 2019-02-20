@@ -23,7 +23,7 @@ export const pageSEO = (pageSEOData = {}) => {
     metaTag('og:url', 'https://viblo.asia/organization-feature', 'property'),
     metaTag('og:type', 'website', 'property'),
     metaTag('og:title', title, 'property'),
-    metaTag('og:image', 'https://images.viblo.asia/dc1b96a1-a906-4fca-8fbd-d4f8394f1da5.jpg', 'property'),
+    metaTag('og:image', 'https://images.viblo.asia/full/8d456ac2-2e8e-4df0-b4a7-c34ed39bcad7.jpg', 'property'),
     metaTag('og:description', description, 'property'),
 
     // Twitter:
