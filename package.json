@@ -2,10 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
-    "release": "yarn generate && cd dist && zip -r dist.zip ."
+    "release": "yarn generate && cd dist && zip -r dist.zip * && mv dist.zip .."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",

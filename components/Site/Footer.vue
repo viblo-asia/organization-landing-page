@@ -28,7 +28,7 @@
               <ul class="menu-list">
                 <li><a href="https://www.facebook.com/viblo.asia" target="_blank">{{ $t('footer.links.facebook') }}</a></li>
                 <li><a href="https://github.com/viblo-asia" target="_blank">{{ $t('footer.links.github') }}</a></li>
-                <li><a href="https://viblo.asia/regsiter">{{ $t('footer.links.signup') }}</a></li>
+                <li><a href="https://accounts.viblo.asia/regsiter">{{ $t('footer.links.signup') }}</a></li>
                 <li><a href="https://viblo.asia/terms">{{ $t('footer.links.terms') }}</a></li>
               </ul>
             </div>
