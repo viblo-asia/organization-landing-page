@@ -16,7 +16,7 @@
     "devices.css": "^0.1.15",
     "dotenv": "^6.2.0",
     "lodash": "^4.17.11",
-    "nuxt": "^2.10.0",
+    "nuxt": "^2.14.6",
     "simple-scrollspy": "^2.0.1",
     "v-click-outside": "^2.0.2",
     "vue-i18n": "^8.8.1",
