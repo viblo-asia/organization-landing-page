@@ -45,17 +45,19 @@ export default {
   plugins: [
     '~/plugins/components.js',
     '~/plugins/font-awesome.js',
-    '~/plugins/i18n.js'
+    '~/plugins/i18n.js',
+    '~/plugins/vue-gtag.client.js',
   ],
 
-  modules: [
-    // Google analytics:
-    ['@nuxtjs/google-analytics'],
+  buildModules: [
+    '@nuxtjs/google-analytics',
   ],
 
-  googleAnalytics:
-  {
-    id: GOOGLE_ANALYTICS_TRACK_ID
+  googleAnalytics: {
+    id: GOOGLE_ANALYTICS_TRACK_ID,
+    debug: {
+      sendHitTask: true,
+    },
   },
 
   router: {

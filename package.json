@@ -9,7 +9,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/vue-fontawesome": "^0.1.5",
-    "@nuxtjs/google-analytics": "^2.1.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@vue/shared": "^3.2.47",
     "animate.css": "^3.7.0",
     "bulma": "^0.7.4",
     "cross-env": "^5.2.0",
@@ -19,6 +20,7 @@
     "nuxt": "^2.14.6",
     "simple-scrollspy": "^2.0.1",
     "v-click-outside": "^2.0.2",
+    "vue-gtag": "1.16.1",
     "vue-i18n": "^8.8.1",
     "wow.js": "^1.2.2"
   },
